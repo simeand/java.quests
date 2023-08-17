@@ -1,0 +1,36 @@
+import java.util.Objects;
+
+class BaseClass {
+    private static int instanceIdCounter = 0;
+    private final int instanceId = instanceIdCounter;
+
+    private BaseClass parent;
+
+    public BaseClass() {
+        this.parent = this;
+    }
+    public BaseClass(BaseClass parent) {
+        this.parent = parent;
+    }
+
+    public BaseClass getParent() {
+        return this.parent;
+    }
+
+    public int getInstanceId() {
+        return this.instanceId;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof BaseClass baseClass)) return false;
+        return instanceId == baseClass.instanceId && Objects.equals(parent, baseClass.parent);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(instanceId, parent);
+    }
+}
