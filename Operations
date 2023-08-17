@@ -1,1 +1,46 @@
 
+class Operations {
+    public static void main(String[] args) {
+
+        int x = 10;
+        int y = 4;
+
+        System.out.println("Addition of x and y: " + (x + y));
+        System.out.println("Subtraction of x and y: " + (x - y));
+        System.out.println("Multiplication of x and y: " + (x * y));
+        System.out.println("Division of x and y: " + (x / y));
+        System.out.println("Modulus of x and y: " + (x % y));
+
+        System.out.println("equals x and y: " + (x == y));
+        System.out.println("notequals  x and y: " + (x != y));
+
+        System.out.println("is x less then y: " + (x < y));
+        System.out.println("is  x less or equal y: " + (x <= y));
+        System.out.println("is  x greater  y: " + (x > y));
+        System.out.println("is  x greater or equal y: " + (x >= y));
+
+        System.out.println("is  x greater or equal y: " + (x >= y));
+        System.out.println("is  x greater or equal y: " + (x >= y));
+        System.out.println("is  x greater or equal y: " + (x >= y));
+
+        System.out.println("Ternary operator: " + ((x < y) ? "x is less than y" : "x is greater or equal y"));
+        System.out.println("Parentheses: " + (x + y)/2);
+
+    }
+
+}
+
+//  Terminal Output:
+//        Addition of x and y: 14
+//        Subtraction of x and y: 6
+//        Multiplication of x and y: 40
+//        Division of x and y: 2
+//        Modulus of x and y: 2
+//        equals x and y: false
+//        notequals  x and y: true
+//        is x less then y: false
+//        is  x less or equal y: false
+//        is  x greater  y: true
+//        is  x greater or equal y: true
+//        Ternary operator: x is greater or equal y
+//        Parentheses: 7
