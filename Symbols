@@ -1,0 +1,19 @@
+public class Symbols {
+    public static void main(String[] args) {
+
+
+        int number = 74;
+        int number1 = 77;
+        int numberOne = 10;
+        String name = "Arnold";
+        String myName = "John";
+
+
+        int 1number = 74;
+        int 1 = 77;
+        int *NumberOne = 10;
+        String $name = "Arnold";
+        String _myName = "John";
+
+    }
+}
